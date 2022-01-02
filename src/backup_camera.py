@@ -10,11 +10,11 @@ def setup():
 	camera_enable_gpio.switch_to_output(False)
 
 def enable():
-	global camera_enable_gpio
-	is_enabled = value
+	global camera_enable_gpio, is_enabled
+	is_enabled = True
 	camera_enable_gpio.switch_to_output(True)
 
 def disable():
-	global camera_enable_gpio
-	is_enabled = value
+	global camera_enable_gpio, is_enabled
+	is_enabled = False
 	camera_enable_gpio.switch_to_output(False)
